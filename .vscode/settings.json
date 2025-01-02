@@ -1,0 +1,49 @@
+{
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  // 保存时自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  // 默认格式化工具
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 针对不同文件类型的格式化工具配置
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ESLint 配置
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+  // StyleLint 配置
+  "stylelint.validate": ["css", "scss", "vue"],
+  "stylelint.enable": true,
+  "stylelint.snippet": ["css", "scss", "vue"],
+  "stylelint.configFile": ".stylelintrc.cjs",
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false
+}

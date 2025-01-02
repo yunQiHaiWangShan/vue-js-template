@@ -1,0 +1,54 @@
+{
+  "name": "vue-js-template",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.12.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint --ext .js,.vue src",
+    "lint:style": "stylelint \"**/*.{vue,css,scss}\" --fix",
+    "lint": "pnpm lint:js && pnpm lint:style",
+    "format": "prettier --write .",
+    "check-imports": "node scripts/check-imports.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "element-plus": "^2.9.0",
+    "pinia": "^2.3.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.18.1",
+    "postcss": "^8.4.32",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.1.0",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "sass": "^1.69.5",
+    "stylelint": "^16.0.2",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-scss": "^6.0.0",
+    "unplugin-auto-import": "^0.17.1",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^5.0.4",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1",
+    "glob": "^8.1.0"
+  }
+}

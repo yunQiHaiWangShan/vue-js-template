@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "usernamehw.errorlens",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense"
+  ]
+}
