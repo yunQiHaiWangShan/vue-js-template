@@ -38,8 +38,11 @@ export const useLayoutStore = defineStore('layout', () => {
   })
   
   // 计算属性
-  const sidebarWidth = computed(() => 
-    sidebar.value.collapsed ? theme.value.sidebar.collapsedWidth : theme.value.sidebar.width
+  const sidebarWidth = computed(() => {
+    return  theme.value.sidebar.width
+    // return  sidebar.value.collapsed ? theme.value.sidebar.collapsedWidth : theme.value.sidebar.width
+  }
+   
   )
   
   // Actions

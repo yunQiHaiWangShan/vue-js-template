@@ -26,15 +26,12 @@
           :class="{ active: currentPath === `/examples/${route.path}` }"
         >
           <i :class="getIcon(route)"></i>
-          <span v-show="!layoutStore.sidebar.collapsed">{{ getTitle(route) }}</span>
+          <span class="linkText">{{ getTitle(route) }}</span>
         </router-link>
      
       </nav>
       
-      <!-- 折叠按钮 -->
-      <div class="collapse-btn" @click="layoutStore.toggleSidebar">
-        <i :class="layoutStore.sidebar.collapsed ? 'el-icon-s-unfold' : 'el-icon-s-fold'"></i>
-      </div>
+  
     </aside>
     
     <!-- 主内容区 -->
@@ -173,6 +170,10 @@ const handleResize = () => {
     transition: all 0.3s;
   }
 
+  .linkText{
+    color: #fff;
+  }
+
   .router-link-exact-active{
     color:#fff;
   }
@@ -191,9 +192,7 @@ const handleResize = () => {
   z-index: 1000;
 }
 
-.sidebar.collapsed {
-  width: 64px !important;
-}
+
 
 .logo {
   height: 60px;
